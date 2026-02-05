@@ -1,3 +1,6 @@
+# Programmer: Javan Graber
+# Date: February 5, 2026
+
 # Write a program that asks the user to enter a person's age.  The program should display a message indicating whether the person is an infant, a child, a teenager, or an adult.  Following are the guidelines:
 
 # If the person is 1 year old or less, it should display "infant" (without quotes).
@@ -8,7 +11,21 @@
 def categorize_age(age):
     ageCategory = "TBD"
     ######################
-    # WRITE YOUR CODE HERE
+    # Determine if the person is an infant
+    if age <= 1:
+        ageCategory = 'infant'
+
+    # Determine if the person is a child
+    elif age > 1 and age < 13:
+        ageCategory = 'child'
+
+    # Determine if the person is a teenager
+    elif age >= 13 and age < 20:
+        ageCategory = 'teenager'
+
+    # Determine if the person is an adult
+    elif age >= 20:
+        ageCategory = 'adult'
     ######################
 
 
@@ -16,7 +33,7 @@ def categorize_age(age):
 
 
 #### This piece of the code has been done for you,
-#### you only need to worry about the actual shipping 
+#### you only need to worry about the actual shipping
 #### charge logic in the weight_conversion function
 if __name__ == '__main__':
     # Local variables
